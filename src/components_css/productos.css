@@ -1,0 +1,22 @@
+.mosaico {
+  display: grid;
+  grid-template-columns: repeat(2, 150px); /* 2 columnas de 150px cada una para que las imágenes tengan el mismo tamaño */
+  gap: 10px; /* Espacio entre las imágenes */
+  position: absolute;
+  left: 80%; /* Centra el mosaico respecto al contenedor padre */
+  transform: translateX(-60%); /* Ajuste fino para que esté más a la izquierda */
+  top: 350px; /* Ajusta la distancia desde el top */
+}
+
+.mosaico img {
+  width: 100%; /* Las imágenes ocuparán todo el espacio de la celda */
+  height: 150px; /* Altura fija para que todas las imágenes tengan el mismo tamaño */
+  object-fit: cover; /* Asegura que las imágenes se recorten adecuadamente sin distorsión */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra alrededor de las imágenes */
+  transition: transform 0.3s ease;
+}
+
+.mosaico img:hover {
+  transform: scale(1.05); /* Efecto de agrandamiento al pasar el ratón */
+}

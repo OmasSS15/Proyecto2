@@ -5,6 +5,7 @@ import './App.css'
 import Navbar from './components_jsx/navbar.jsx';
 import Footer from './components_jsx/footer.jsx';
 import Blog from './components_jsx/blog.jsx';
+import Productos from './components_jsx/productos.jsx';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,8 +15,8 @@ function App() {
     <div>
       <Navbar />
       <Blog />
+      <Productos/>
       <Footer />
-   
     </div>
   </>  
   )

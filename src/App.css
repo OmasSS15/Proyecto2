@@ -1,26 +1,5 @@
-
-.landing-page {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.main-content {
-  flex: 1;
-}
-
-.gallery {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 2rem;
-}
-
-.gallery img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  margin: 0.5rem;
+body {
+  background-image: url('./assets/Imagen/FONDO.jpg');
 }
 
 
