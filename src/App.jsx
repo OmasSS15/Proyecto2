@@ -3,14 +3,21 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './components_jsx/navbar.jsx';
+import Footer from './components_jsx/footer.jsx';
+import Blog from './components_jsx/blog.jsx';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+    <div>
       <Navbar />
-    </>
+      <Blog />
+      <Footer />
+   
+    </div>
+  </>  
   )
 }
 
