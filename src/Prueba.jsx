@@ -6,46 +6,18 @@ import Navbar from './components_jsx/navbar.jsx';
 import Footer from './components_jsx/footer.jsx';
 import Blog from './components_jsx/blog.jsx';
 import Productos from './components_jsx/productos.jsx';
-import Prueba from './Prueba.jsx'
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
-  // const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0)
 
   return (
-    <BrowserRouter>
-      <Routes>
-        {/* index ayuda a que lo primero que se muestre sea esta ruta */}
-        <Route 
-          index 
-          path="/" 
-          element={
-            <>
-              <div>
-                <Navbar />
-                <Blog />
-                <Productos/>
-                <Footer />
-              </div>
-            </>  
-          
-          }/>
-          <Route path="/prueba" element={<Prueba />} />
-        {/* <Route path="/blog" element={<Blog />} />
-        <Route path="/productos" element={<Productos />} />
-        <Route path="/footer" element={<Footer />} /> */}
-
-      </Routes>
-    
-    </BrowserRouter>
-  //   <>
-  //   <div>
-  //     <Navbar />
-  //     <Blog />
-  //     <Productos/>
-  //     <Footer />
-  //   </div>
-  // </>  
+    <>
+    <div>
+      <Navbar />
+      <Productos/>
+      
+    </div>
+  </>  
   )
 }
 
